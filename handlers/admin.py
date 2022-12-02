@@ -14,7 +14,9 @@ from data_base import sqlite_db
 a_inline = InlineKeyboardMarkup()
 a_reply = ReplyKeyboardRemove()
 
-#group_admin = ```ID_GROUP```
+group_admin = -886166071
+
+#async def start
 
 
 # Регистрация хэндрелов
