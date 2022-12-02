@@ -4,4 +4,4 @@ This is a telegram-bot that can send photo from https://h5.tu.qq.com/web/ai-2d/c
 
 
 
-<img src ="https://i.gifer.com/ICU.gif">
+<img src ="ICU (1).gif">
