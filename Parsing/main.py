@@ -1,6 +1,7 @@
 import time
 import pickle
 import re
+import os
 
 from selenium import webdriver
 
@@ -25,7 +26,7 @@ class Driver:
         self.useragent = UserAgent()
         self.chrome_options = Options()
         self.chrome_options.add_argument("--no-sandbox")
-        # self.chrome_options.add_argument("--headless")
+       #  self.chrome_options.add_argument("--headless")
         self.chrome_options.add_argument(f'user-agent={self.useragent.random}')
 
         self.driver = webdriver.Chrome(executable_path='chromedriver',
@@ -49,7 +50,11 @@ class Driver:
         # Нажатие кнопки для отправки имя файла
         self.wait_long.until(EC.element_to_be_clickable((By.CLASS_NAME, '_choose-actions_shsfk_36')))
         self.driver.find_element(By.CLASS_NAME, '_choose-actions_shsfk_36').click()
-        self.driver.find_elements(By.TAG_NAME, 'input')[-1].send_keys(r"C:\Users\User\Desktop\Telegram-Bot-Parsing-Anime-Filter-Site\photo.jpg")
+
+        path = os.path.abspath(link)
+        print('Путь до файла:\n' + path)
+
+        self.driver.find_elements(By.TAG_NAME, 'input')[-1].send_keys(path)
         # Нажатие кнопки 2
         self.wait_long_2.until(EC.element_to_be_clickable((By.CLASS_NAME, '_action-btn-left_mvguu_154')))
         # Скриншот колучившегося фото
@@ -60,9 +65,8 @@ class Driver:
         self.wait_long.until(EC.visibility_of_element_located((By.TAG_NAME, 'img')))
         self.driver.find_element(By.TAG_NAME, 'img').screenshot(f'screenshot.png')
         print('done')
-        time.sleep(60)
-
-        self.driver.quit()
         self.driver.close()
+        self.driver.quit()
+        print('удачно закрылся браузер')
 
 
