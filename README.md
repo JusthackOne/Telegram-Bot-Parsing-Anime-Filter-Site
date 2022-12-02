@@ -4,4 +4,4 @@ This is a telegram-bot that can send photo from https://h5.tu.qq.com/web/ai-2d/c
 
 
 
-<img src ="https://github.com/13cide/gdz_tg_bot/blob/main/konashenkov_pizdit_chyo-to.gif">
+<img src ="https://i.gifer.com/ICU.gif">
