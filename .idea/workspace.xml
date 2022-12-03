@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a73b80f-c588-45d0-b1ec-8e63262bee08" name="Changes" comment="4" />
+    <list default="true" id="0a73b80f-c588-45d0-b1ec-8e63262bee08" name="Changes" comment="+Bot">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parsing/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parsing/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_original/AQAD3McxG99xUUh-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_original/AQAD3McxG99xUUh4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_original/AQAD3McxG99xUUh9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_original/AQAD3McxG99xUUhy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b382ef540660ee9fc6e89ad8b687ecbafd32cb21" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,6 +35,12 @@
   </component>
   <component name="GitRewordedCommitMessages">
     <option name="onto" value="b382ef540660ee9fc6e89ad8b687ecbafd32cb21" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/handlers/__init__.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/handlers/client.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../bot_test_scr_0/handlers/client.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/keyboards/client_kb.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bot_telegram.py" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -51,7 +66,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="bot_telegram" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -73,7 +88,7 @@
           <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
         </ENTRIES>
       </EXTENSION>
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot_telegram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,7 +191,35 @@
       <option name="project" value="LOCAL" />
       <updated>1670012810791</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="+Bot">
+      <created>1670017012552</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670017012552</updated>
+    </task>
+    <task id="LOCAL-00014" summary="+Bot">
+      <created>1670019882304</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670019882304</updated>
+    </task>
+    <task id="LOCAL-00015" summary="+Bot">
+      <created>1670022967859</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670022967859</updated>
+    </task>
+    <task id="LOCAL-00016" summary="+Bot">
+      <created>1670022976274</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670022976274</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +242,7 @@
     <MESSAGE value="3" />
     <MESSAGE value="Revert &quot;3&quot;&#10;&#10;This reverts commit b382ef54" />
     <MESSAGE value="4" />
-    <option name="LAST_COMMIT_MESSAGE" value="4" />
+    <MESSAGE value="+Bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="+Bot" />
   </component>
 </project>
