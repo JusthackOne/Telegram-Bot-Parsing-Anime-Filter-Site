@@ -45,20 +45,21 @@ async def parsing_photo(message: types.Message, state: FSMContext):
     try:
         await message.answer('Начинаю парсинг, ждите')
 
-
-
-
-        for n in range(len(message.photo)):
-            photoSize: PhotoSize = message.photo[n]
-            file_info = await bot.get_file(photoSize.file_id)
-            fileExt = file_info.file_path.split(".")[-1]
-            url_photo = f"photo_original\\{photoSize.file_unique_id}.{fileExt}"
-
-            await message.photo[n].download(url_photo)
+        photoSize: PhotoSize = message.photo[-1]
+        file_info = await bot.get_file(photoSize.file_id)
+        fileExt = file_info.file_path.split(".")[-1]
+        url_photo = "photo_original/" + photoSize.file_unique_id + '.' + fileExt
+        await message.photo[-1].download(url_photo)
     except: return
 
     r = Driver()
-    r.start_parsing(url_photo)
+    Parsing =  r.start_parsing(url_photo)
+
+    if Parsing == True:
+        url_photo_parsing = 'photo_parsing/' + url_photo.replace('photo_original/', '').replace('jpg', 'png')
+        await bot.send_photo(message.from_user.id, types.InputFile(url_photo_parsing))
+    else:
+        await message.answer('Ой, что то произошло не так, попробуйте ещё раз')
 
     await state.finish()
 
